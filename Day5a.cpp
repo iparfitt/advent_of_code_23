@@ -33,15 +33,7 @@ std::vector<int64_t> parseNumbersFromString(const std::string& numberString)
         else if (parsingNumber)
         {
             parsingNumber = false;
-            try
-            {
-                numberVector.push_back(std::stoll(number));
-            }
-            catch (const std::exception& e)
-            {
-                std::cerr << e.what() << " " << number << '\n';
-            }
-
+            numberVector.push_back(std::stoll(number));
             number = "";
         }
 
