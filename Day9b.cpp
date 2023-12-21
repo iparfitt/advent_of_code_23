@@ -98,6 +98,6 @@ int main()
         nextNumberSum += findNextNumber(pattern);
     }
 
-    std::cout << "The sum of next numbers in the pattern are: " << nextNumberSum << std::endl;
+    std::cout << "The sum of previous numbers in the pattern are: " << nextNumberSum << std::endl;
     return 0;
 }
